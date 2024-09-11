@@ -4,7 +4,7 @@
     $age = 37;
     $isStudent = true;
 
-    echo ($name)
+    echo ($name);
 
     //Veri Tipleri
     $name = "Ahmet Kaya"; //String
