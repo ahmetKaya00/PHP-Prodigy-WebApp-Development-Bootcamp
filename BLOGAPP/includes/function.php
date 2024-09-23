@@ -98,7 +98,7 @@ function getComments($pdo,$blog_id){
 function getAllBlogs($pdo){
     $stmt = $pdo->prepare("SELECT blogs.*, categories.name as category_name FROM blogs JOIN categories ON blogs.category_id = categories.id ORDER BY blogs.created_at DESC");
     $stmt->execute();
-    return $stmt->fetch(PDO::FETCH_ASSOC);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 ?>

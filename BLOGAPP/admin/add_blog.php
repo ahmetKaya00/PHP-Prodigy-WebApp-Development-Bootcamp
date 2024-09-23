@@ -44,6 +44,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     <script>
       tinymce.init({
         selector: '#content',
+        apiKey: 'ngvt5c1mjw32mf013yl78j12sixv644beta6cqbw4l0mx8h1',
         plugins: [
           'a11ychecker','advlist','advcode','advtable','autolink','checklist','markdown',
           'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
