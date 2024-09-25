@@ -60,7 +60,7 @@ include './includes/header.php';
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo htmlspecialchars($blog['title']) ?></h5>
-                                <p class="card-text"><?php echo htmlspecialchars($blog['description']),0,100 ?>...</p>
+                                <p class="card-text"><?php echo htmlspecialchars($blog['content']),0,100 ?>...</p>
                                 <a href="blog_detail.php?id=<?php echo $blog['id'];?>" class="btn btn-primary">Devamını Oku</a>
                             </div>
                         </div>

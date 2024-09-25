@@ -39,20 +39,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/ngvt5c1mjw32mf013yl78j12sixv644beta6cqbw4l0mx8h1/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
 
     <script>
       tinymce.init({
         selector: '#content',
         apiKey: 'ngvt5c1mjw32mf013yl78j12sixv644beta6cqbw4l0mx8h1',
-        plugins: [
-          'a11ychecker','advlist','advcode','advtable','autolink','checklist','markdown',
-          'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
-          'powerpaste','fullscreen','formatpainter','insertdatetime','media','table','help','wordcount'
-        ],
-        toolbar: 'undo redo | formatpainter casechange blocks | bold italic backcolor | ' +
-          'alignleft aligncenter alignright alignjustify | ' +
-          'bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
       });
     </script>
     <title>Document</title>
@@ -71,7 +66,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         </div>
         <div class="form-group mb-3">
             <label for="content">İçerik</label>
-            <textarea id="content"></textarea>
+            <textarea id="content" name="content"></textarea>
         </div>
         <div class="form-group mb-3">
             <label for="image">Resim</label>
